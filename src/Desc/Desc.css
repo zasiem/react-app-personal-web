@@ -1,0 +1,16 @@
+.desc-container{
+	padding: 20px;
+	border: 1px solid navy;
+	width: 400px;
+	margin: 10px auto;
+	background-color: #469eea;
+	border-radius: 10px;
+}
+
+.desc-container button{
+}
+
+.desc-container input{
+	height: 30px;
+	margin: 10px;
+}
