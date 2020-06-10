@@ -124,7 +124,9 @@ function App() {
  return (
   <div className="App">
     <Header/>
-    <Skills/>
+    <section id="skills">
+      <Skills/>
+    </section>
     {/*<h1>React-App Project</h1>
     <div className="baris">
       <select className="form-control" onChange={changeShowStateHandler}>
