@@ -6,8 +6,7 @@ body {
 	-webkit-font-smoothing : antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color       : #000034;
-	padding                : 100px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 code {

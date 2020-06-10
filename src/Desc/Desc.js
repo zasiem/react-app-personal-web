@@ -7,9 +7,9 @@ const desc = (props) => {
 			<p>This Webapp made from {props.apps}</p>
 			<input type="text" value={props.apps} onChange={props.rename}/>
 			<button className="btn btn-danger" onClick={props.delete}>Delete</button>
-		</div>	
+		</div>
 		);
 
-}	
+}
 
 export default desc

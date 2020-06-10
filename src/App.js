@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import Desc from './Desc/Desc';
+import Header from './components/header/Header';
+import Skills from './components/contents/skills/Skills';
 
 function App() {
 
@@ -9,7 +11,7 @@ function App() {
     apps: [
     { id:'1', name: 'Bootstrap', show: false },
     { id:'2', name: 'React-Js', show: false },
-    { id:'3', name: 'Laravel', show: false } 
+    { id:'3', name: 'Laravel', show: false }
     ],
     showAll: false
   })
@@ -22,7 +24,7 @@ function App() {
         apps: [
         { id:'1', name: 'Bootstrap', show: true },
         { id:'2', name: 'React-Js', show: false },
-        { id:'3', name: 'Laravel', show: false } 
+        { id:'3', name: 'Laravel', show: false }
         ]
       })
     } else if ( input == 2){
@@ -30,7 +32,7 @@ function App() {
        apps: [
        { id:'1', name: 'Bootstrap', show: false },
        { id:'2', name: 'React-Js', show: true },
-       { id:'3', name: 'Laravel', show: false } 
+       { id:'3', name: 'Laravel', show: false }
        ]
      })
     } else if ( input == 3) {
@@ -38,17 +40,17 @@ function App() {
         apps: [
         { id:'1', name: 'Bootstrap', show: false },
         { id:'2', name: 'React-Js', show: false },
-        { id:'3', name: 'Laravel', show: true } 
+        { id:'3', name: 'Laravel', show: true }
         ]
-      })  
-    } else { 
+      })
+    } else {
 
       if (appState.showAll) {
        setAppState({
         apps: [
         { id:'1', name: 'Bootstrap', show: false },
         { id:'2', name: 'React-Js', show: false },
-        { id:'3', name: 'Laravel', show: false } 
+        { id:'3', name: 'Laravel', show: false }
         ],
         showAll : false
       })
@@ -58,7 +60,7 @@ function App() {
         apps: [
         { id:'1', name: 'Bootstrap', show: true },
         { id:'2', name: 'React-Js', show: true },
-        { id:'3', name: 'Laravel', show: true } 
+        { id:'3', name: 'Laravel', show: true }
         ],
         showAll : true
       })
@@ -67,19 +69,19 @@ function App() {
    }
  }
 
- //list 
+ //list
   let nameLists = (
     <div>
     {appState.apps.map((nameList, index) => {
       if (nameList.show) {
-        return <Desc 
+        return <Desc
         delete={() => deleteStateHandler(index)}
-        apps={nameList.name} 
+        apps={nameList.name}
         key={nameList.id}
         rename={(event) => renameStateHandler(event,nameList.id)}
         />
-      } 
-    })} 
+      }
+    })}
     </div>
   );
 
@@ -90,7 +92,7 @@ function App() {
     tempState.splice(index, 1); //hapus index
     setAppState({
       apps:tempState
-    }); 
+    });
   }
 
   const renameStateHandler = (event, id) => {
@@ -121,17 +123,20 @@ function App() {
 //returning jsx
  return (
   <div className="App">
-    <h1>React-App Project</h1>
+    <Header/>
+    <Skills/>
+    {/*<h1>React-App Project</h1>
     <div className="baris">
       <select className="form-control" onChange={changeShowStateHandler}>
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
       </select>
-      
+
       <button className="btn btn-primary" onClick={changeShowStateHandler} value="all">Show All !</button>
     </div>
-    {nameLists}
+    {nameLists}*/}
+
   </div>
   );
 
