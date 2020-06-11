@@ -17,7 +17,9 @@ function Header() {
           <p className="font-weight-bold">Hello, I'm</p>
           <h1 className="font-weight-bold">Erza Putra Albasori</h1>
           <p>Interested in front-end development, especially web. Familiar with html, css, php, java, framework bootstrap and laravel. Still learn about reactjs and android native.</p>
-          <hr/>
+          <hr className=""/>
+          <a href="#contact" className="btn btn-danger mr-3">Hire Me</a>
+          <a href="#contact" className="btn btn-outline-danger">Portfolio</a>
         </div>
       </div>
     </div>
