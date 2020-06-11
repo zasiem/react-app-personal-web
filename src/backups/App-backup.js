@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import Desc from './Desc/Desc';
-import Header from './components/header/Header';
-import Skills from './components/contents/skills/Skills';
+import Desc from '../Desc/Desc';
+import Header from '../components/header/Header';
+import Skills from '../components/contents/skills/Skills';
 
 function App() {
 

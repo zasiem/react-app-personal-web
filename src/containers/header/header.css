@@ -1,0 +1,16 @@
+.bg-grey{
+  background-color: #E8E8E8;
+}
+
+.description-container{
+  padding: 10% 0px;
+  color: #000034;
+}
+
+.description-container h1{
+  font-size:40px;
+}
+
+.description-container p{
+  font-size:15px;
+}
