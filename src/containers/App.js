@@ -9,9 +9,9 @@ function App() {
  return (
   <div className="App">
     <Header/>
-    <section id="skills">
+    {/*<section id="skills">
       <Skills/>
-    </section>
+    </section>*/}
   </div>
   );
 
