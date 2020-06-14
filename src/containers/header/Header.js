@@ -19,6 +19,7 @@ function Header() {
           <a className="btn btn-link text-dark" href="https://www.linkedin.com/in/erzaputra/" target="_blank"><i className='fa fa-linkedin'></i></a>
           <a className="btn btn-link text-dark" href="https://github.com/zasiem" target="_blank"><i className='fa fa-github'></i></a>
           <a className="btn btn-link text-dark" href="https://gitlab.com/erzaputra" target="_blank"><i className='fa fa-gitlab'></i></a>
+          <a className="btn btn-link text-dark" href="https://bitbucket.org/erzaputra" target="_blank"><i className='fa fa-bitbucket'></i></a>
           <a className="btn btn-link text-dark" href="https://instagram.com/erzaputra_" target="_blank"><i className='fa fa-instagram'></i></a>
           <a className="btn btn-link text-dark" href="https://facebook.com/zasiem" target="_blank"><i className='fa fa-facebook'></i></a>
           <hr className=""/>
